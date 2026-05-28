@@ -25,6 +25,7 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
 ## Obtener usuario por ID (GET)
 
 ## Crear usuario exitoso (POST)
+<img width="445" height="165" alt="Swagger UI - Google Chrome 28_05_2026 13_41_26" src="https://github.com/user-attachments/assets/3581927d-5e98-4a80-8c5f-24a748640b8b" />
 
 ## Intentar crear usuario con correo duplicado (POST - error 400)
 
