@@ -28,6 +28,8 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
 <img width="445" height="165" alt="Swagger UI - Google Chrome 28_05_2026 13_41_26" src="https://github.com/user-attachments/assets/3581927d-5e98-4a80-8c5f-24a748640b8b" />
 
 ## Intentar crear usuario con correo duplicado (POST - error 400)
+<img width="635" height="247" alt="Swagger UI - Google Chrome 28_05_2026 13_43_32" src="https://github.com/user-attachments/assets/4ffcb870-c6d2-4ad7-ad17-565b849f93b4" />
+
 
 ## Actualizar usuario (PUT)
 
