@@ -31,8 +31,9 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
 
 ## Intentar crear usuario con correo duplicado (POST - error 400)
 <img width="635" height="247" alt="Swagger UI - Google Chrome 28_05_2026 13_43_32" src="https://github.com/user-attachments/assets/4ffcb870-c6d2-4ad7-ad17-565b849f93b4" />
-## Actualizar usuario (PUT)
 
+## Actualizar usuario (PUT)
+<img width="425" height="165" alt="Swagger UI - Google Chrome 28_05_2026 13_49_17" src="https://github.com/user-attachments/assets/c06a1d04-f771-4f89-bbc1-de5ab9c308ee" />
 
 ## Eliminar usuario (DELETE)
 <img width="1726" height="397" alt="Swagger UI - Google Chrome 28_05_2026 13_52_20" src="https://github.com/user-attachments/assets/f3826680-effe-4d2c-82c0-9887d0772a0c" />
