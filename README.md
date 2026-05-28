@@ -21,6 +21,7 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
 # Pruebas con Swagger/Postman
 
 ## Obtener todos los usuarios (GET)
+<img width="740" height="317" alt="Swagger UI - Google Chrome 28_05_2026 13_50_52" src="https://github.com/user-attachments/assets/8dd3a809-0807-494c-abef-e4e7045f1170" />
 
 ## Obtener usuario por ID (GET)
 
