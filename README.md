@@ -24,6 +24,7 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
 <img width="740" height="317" alt="Swagger UI - Google Chrome 28_05_2026 13_50_52" src="https://github.com/user-attachments/assets/8dd3a809-0807-494c-abef-e4e7045f1170" />
 
 ## Obtener usuario por ID (GET)
+<img width="445" height="165" alt="Swagger UI - Google Chrome 28_05_2026 13_41_26" src="https://github.com/user-attachments/assets/b857776d-a7bb-4804-ad30-e01788367439" />
 
 ## Crear usuario exitoso (POST)
 <img width="445" height="165" alt="Swagger UI - Google Chrome 28_05_2026 13_41_26" src="https://github.com/user-attachments/assets/3581927d-5e98-4a80-8c5f-24a748640b8b" />
