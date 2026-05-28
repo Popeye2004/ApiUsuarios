@@ -18,16 +18,16 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
    ```bash
    git clone https://github.com/tuusuario/ApiUsuarios.git
    
-#Pruebas con Swagger/Postman
+# Pruebas con Swagger/Postman
 
-##Obtener todos los usuarios (GET)
+## Obtener todos los usuarios (GET)
 
-##Obtener usuario por ID (GET)
+## Obtener usuario por ID (GET)
 
-##Crear usuario exitoso (POST)
+## Crear usuario exitoso (POST)
 
-##Intentar crear usuario con correo duplicado (POST - error 400)
+## Intentar crear usuario con correo duplicado (POST - error 400)
 
-##Actualizar usuario (PUT)
+## Actualizar usuario (PUT)
 
-##Eliminar usuario (DELETE)
+## Eliminar usuario (DELETE)
