@@ -11,3 +11,9 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
 ## Requisitos previos
 - Use la version NET 6.0
 - Visual Studio 2022 (o Visual Studio Code con extensión C#)
+
+## Instrucciones para ejecutar la API
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/ApiUsuarios.git
