@@ -17,3 +17,17 @@ Desarrollé esta API REST como parte de la Tarea de Creación de una API REST. U
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/tuusuario/ApiUsuarios.git
+   
+#Pruebas con Swagger/Postman
+
+##Obtener todos los usuarios (GET)
+
+##Obtener usuario por ID (GET)
+
+##Crear usuario exitoso (POST)
+
+##Intentar crear usuario con correo duplicado (POST - error 400)
+
+##Actualizar usuario (PUT)
+
+##Eliminar usuario (DELETE)
