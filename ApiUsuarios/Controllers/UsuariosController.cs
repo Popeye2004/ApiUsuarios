@@ -1,5 +1,6 @@
 ﻿using ApiUsuarios.Data;
 using ApiUsuarios.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,7 @@ namespace ApiUsuarios.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UsuariosController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -16,7 +18,6 @@ namespace ApiUsuarios.Controllers
             _context = context;
         }
 
-        // GET: api/usuarios
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
         {
@@ -24,7 +25,6 @@ namespace ApiUsuarios.Controllers
             return Ok(usuarios);
         }
 
-        // GET: api/usuarios/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
         {
@@ -36,11 +36,9 @@ namespace ApiUsuarios.Controllers
             return Ok(usuario);
         }
 
-        // POST: api/usuarios
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario([FromBody] Usuario usuario)
         {
-            // Validación de duplicado de correo
             var correoExistente = await _context.Usuarios.AnyAsync(u => u.Correo == usuario.Correo);
             if (correoExistente)
             {
@@ -58,7 +56,6 @@ namespace ApiUsuarios.Controllers
             return CreatedAtAction(nameof(GetUsuario), new { id = usuario.Id }, usuario);
         }
 
-        // PUT: api/usuarios/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(int id, [FromBody] Usuario usuario)
         {
@@ -67,7 +64,6 @@ namespace ApiUsuarios.Controllers
                 return BadRequest(new { message = "El ID de la ruta no coincide con el del usuario." });
             }
 
-            // Verificar que el correo no exista ya en otro usuario (excepto el actual)
             var correoDuplicado = await _context.Usuarios.AnyAsync(u => u.Correo == usuario.Correo && u.Id != id);
             if (correoDuplicado)
             {
@@ -80,7 +76,6 @@ namespace ApiUsuarios.Controllers
             return NoContent();
         }
 
-        // DELETE: api/usuarios/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUsuario(int id)
         {

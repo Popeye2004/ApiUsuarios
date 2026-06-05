@@ -17,6 +17,14 @@ namespace ApiUsuarios.Models
         [StringLength(200)]
         public string Correo { get; set; }
 
+        [Required(ErrorMessage = "El nombre de usuario es obligatorio")]
+        [StringLength(50, MinimumLength = 3, ErrorMessage = "El username debe tener entre 3 y 50 caracteres")]
+        public string Username { get; set; }
+
+        [Required(ErrorMessage = "La contraseña es obligatoria")]
+        [StringLength(256)]
+        public string PasswordHash { get; set; } 
+
         [Required(ErrorMessage = "La fecha de nacimiento es obligatoria")]
         [DataType(DataType.Date)]
         public DateTime FechaDeNacimiento { get; set; }
