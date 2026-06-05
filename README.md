@@ -34,6 +34,14 @@ He extendido la API de usuarios creada anteriormente agregando autenticación me
   <img width="365" height="165" alt="Swagger UI - Google Chrome 05_06_2026 17_02_34" src="https://github.com/user-attachments/assets/9a1d4868-c7ce-457f-9637-902eb874c9df" />
 
 - Solicitudes GET, POST, PUT, DELETE protegidas.
+
+  
 - Intento sin token → 401 Unauthorized.
+
+  <img width="1920" height="227" alt="Swagger UI - Google Chrome 05_06_2026 17_32_08" src="https://github.com/user-attachments/assets/58f44dfc-c721-4e3b-9404-91ddbaaf2b95" />
+
 - Refresh token.
+
+  <img width="1920" height="165" alt="Swagger UI - Google Chrome 05_06_2026 17_36_18" src="https://github.com/user-attachments/assets/ade35649-0e84-495b-889f-0472a1ba746e" />
+
 
