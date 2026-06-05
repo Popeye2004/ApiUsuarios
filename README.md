@@ -22,3 +22,12 @@ He extendido la API de usuarios creada anteriormente agregando autenticación me
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tuusuario/ApiUsuarios.git
+
+   ## Capturas de pantalla
+
+- Login con éxito y token.
+- Uso del token en Swagger (Authorize).
+- Solicitudes GET, POST, PUT, DELETE protegidas.
+- Intento sin token → 401 Unauthorized.
+- Refresh token.
+
