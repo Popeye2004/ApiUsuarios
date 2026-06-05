@@ -15,9 +15,12 @@ namespace ApiUsuarios.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configurar índice único en el campo Correo para evitar duplicados
             modelBuilder.Entity<Usuario>()
                 .HasIndex(u => u.Correo)
+                .IsUnique();
+
+            modelBuilder.Entity<Usuario>()
+                .HasIndex(u => u.Username)
                 .IsUnique();
         }
     }
