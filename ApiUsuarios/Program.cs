@@ -99,7 +99,7 @@ using (var scope = app.Services.CreateScope())
             Correo = "enmanuelacevedoarias@gmai.com",
             Username = "Popeye",
             PasswordHash = PasswordService.HashPassword("Enmanuel123"),
-            FechaDeNacimiento = new DateTime(1990, 1, 1)
+            FechaDeNacimiento = new DateTime(2004, 11, 10)
         });
         db.SaveChanges();
     }
