@@ -23,7 +23,7 @@ He extendido la API de usuarios creada anteriormente agregando autenticación me
    ```bash
    git clone https://github.com/tuusuario/ApiUsuarios.git
 
-   ## Capturas de pantalla
+## Capturas de pantalla
 
 - Login con éxito y token.
   
