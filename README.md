@@ -17,7 +17,9 @@ He ampliado la API con nuevas entidades (`Producto`, `Proveedor`, `Categoría`) 
 - `GET /api/productos/cantidad` → Total de productos registrados.
 
 ### Pruebas (capturas)
-![Estadísticas](screenshots/estadisticas.png)
+- Estadísticas
+  <img width="1740" height="657" alt="Swagger UI - Google Chrome 12_06_2026 16_24_11" src="https://github.com/user-attachments/assets/8c5d6865-08e8-4199-a0eb-be9f0d4c3510" />
+
 ![Productos por categoría](screenshots/productos_categoria.png)
 ![Productos por proveedor](screenshots/productos_proveedor.png)
 ![Cantidad total](screenshots/cantidad.png)
