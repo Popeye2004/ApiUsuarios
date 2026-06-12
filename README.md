@@ -20,7 +20,11 @@ He ampliado la API con nuevas entidades (`Producto`, `Proveedor`, `Categoría`) 
 - Estadísticas
   <img width="1740" height="657" alt="Swagger UI - Google Chrome 12_06_2026 16_24_11" src="https://github.com/user-attachments/assets/8c5d6865-08e8-4199-a0eb-be9f0d4c3510" />
 
-![Productos por categoría](screenshots/productos_categoria.png)
-![Productos por proveedor](screenshots/productos_proveedor.png)
-![Cantidad total](screenshots/cantidad.png)
-(Las capturas de CRUD se mantienen de la práctica anterior más las nuevas)
+- Productos por categoría
+  <img width="1790" height="865" alt="Swagger UI - Google Chrome 12_06_2026 17_22_04" src="https://github.com/user-attachments/assets/53fd2d01-4213-4001-b27e-5bde2d540139" />
+
+- Productos por proveedor
+  <img width="1920" height="541" alt="Swagger UI - Google Chrome 12_06_2026 17_31_04" src="https://github.com/user-attachments/assets/44899259-75e9-4d60-a2c4-58b2ca375271" />
+  
+- Cantidad total
+  <img width="1920" height="490" alt="Swagger UI - Google Chrome 12_06_2026 17_32_55" src="https://github.com/user-attachments/assets/05709373-fecf-4509-a62e-9f9414b9042f" />
