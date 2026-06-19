@@ -70,6 +70,9 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddSingleton<LogService>();
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",

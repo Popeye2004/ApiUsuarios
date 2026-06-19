@@ -1,5 +1,6 @@
 ﻿using ApiUsuarios.Data;
 using ApiUsuarios.Models;
+using ApiUsuarios.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,10 +13,12 @@ namespace ApiUsuarios.Controllers
     public class UsuariosController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly LogService _logService;
 
-        public UsuariosController(AppDbContext context)
+        public UsuariosController(AppDbContext context, LogService logService)
         {
             _context = context;
+            _logService = logService;
         }
 
         [HttpGet]
@@ -53,6 +56,16 @@ namespace ApiUsuarios.Controllers
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
+            var logData = new
+            {
+                usuario.Id,
+                usuario.Nombre,
+                usuario.Correo,
+                usuario.Username,
+                usuario.FechaDeNacimiento
+            };
+            await _logService.AgregarLogAsync(logData);
+
             return CreatedAtAction(nameof(GetUsuario), new { id = usuario.Id }, usuario);
         }
 
@@ -89,6 +102,16 @@ namespace ApiUsuarios.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        [HttpGet("logs")]
+        public async Task<IActionResult> GetLogs()
+        {
+            var logs = await _logService.ObtenerLogsAsync();
+            if (logs.Count == 0)
+                return Ok(new { mensaje = "No hay registros de log." });
+
+            return Ok(logs);
         }
     }
 }
