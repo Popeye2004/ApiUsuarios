@@ -1,4 +1,4 @@
-## Extensión - Práctica 7: Modelo ampliado con agregaciones
+## Práctica 7: Modelo ampliado con agregaciones
 
 He ampliado la API con nuevas entidades (`Producto`, `Proveedor`, `Categoría`) y sus CRUD completos. También agregué endpoints de consulta con LINQ para obtener estadísticas y filtros.
 
