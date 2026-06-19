@@ -1,26 +1,12 @@
-## Extensión - Práctica 7: Modelo ampliado con agregaciones
+## Práctica 8: Registro de logs de usuarios
 
-He ampliado la API con nuevas entidades (`Producto`, `Proveedor`, `Categoría`) y sus CRUD completos. También agregué endpoints de consulta con LINQ para obtener estadísticas y filtros.
+He agregado un sistema de logging para la creación de usuarios. Cada vez que se registra un nuevo usuario, la información (excepto la contraseña) se guarda en un archivo JSON (`Logs/usuarios_log.json`). Además, se expone un endpoint para consultar el historial.
 
-### Nuevas entidades y relaciones
-- **Producto**: Id, Nombre, Precio, Stock, IdProveedor, IdCategoria.
-- **Proveedor**: Id, Nombre, Contacto. Un proveedor tiene muchos productos.
-- **Categoria**: Id, Nombre. Una categoría tiene muchos productos.
-- Las relaciones están configuradas con Code First y se insertan datos de ejemplo al iniciar.
+### Endpoint agregado
+- `GET /api/usuarios/logs` → Devuelve todos los registros de log.
 
-### Endpoints agregados
-- CRUD completo para `api/categorias` y `api/proveedores`.
-- CRUD completo para `api/productos`.
-- `GET /api/productos/estadisticas` → Devuelve producto más caro, más barato, suma total y promedio de precios.
-- `GET /api/productos/categoria/{id}` → Productos de una categoría.
-- `GET /api/productos/proveedor/{id}` → Productos de un proveedor.
-- `GET /api/productos/cantidad` → Total de productos registrados.
-
-### Pruebas (capturas)
-- Estadísticas
-  <img width="1740" height="657" alt="Swagger UI - Google Chrome 12_06_2026 16_24_11" src="https://github.com/user-attachments/assets/8c5d6865-08e8-4199-a0eb-be9f0d4c3510" />
-
-![Productos por categoría](screenshots/productos_categoria.png)
-![Productos por proveedor](screenshots/productos_proveedor.png)
-![Cantidad total](screenshots/cantidad.png)
-(Las capturas de CRUD se mantienen de la práctica anterior más las nuevas)
+### Detalles técnicos
+- Se creó un `LogService` que maneja la lectura/escritura asíncrona del archivo.
+- El archivo se crea automáticamente en la carpeta `Logs` si no existe.
+- Los registros incluyen la fecha UTC y los datos del usuario (sin información sensible).
+- Se manejan errores de E/S y se integra con el controlador existente.
