@@ -10,3 +10,5 @@ He agregado un sistema de logging para la creación de usuarios. Cada vez que se
 - El archivo se crea automáticamente en la carpeta `Logs` si no existe.
 - Los registros incluyen la fecha UTC y los datos del usuario (sin información sensible).
 - Se manejan errores de E/S y se integra con el controlador existente.
+### Captura
+<img width="958" height="333" alt="Swagger UI - Google Chrome 25_06_2026 19_02_24" src="https://github.com/user-attachments/assets/226aa95e-4adb-40d5-bc44-ab338ecf8887" />
